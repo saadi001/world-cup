@@ -60,14 +60,19 @@ section{
 }
 
 /* 2nd section styles */
+.second-section{
+    display: flex;
+    justify-content: center;
+}
 .second-part{
     width: 90%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 .sidebar{
     width: 250px;
     height: 250px;
+    position: relative;
     background-color: #161616;
     border-radius: 10px;
     display: grid;
@@ -85,7 +90,32 @@ section{
     align-items: center;
    
 }
-#blog{
+#Blog{
     background-color: #DD0000;
     color: white;
+}
+
+/* ----------------
+        blog styles 
+     ---------------*/
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 20px;
+}
+.blog{
+    width: 300px;
+    height: 350px;
+    border: 1px solid rgb(247, 233, 233);
+    border-radius: 10px;
+    margin:0 5px 5px;  
+}
+.blog img{
+    width: 300px;
+}
+.transfer-info{
+    font-weight: 600;
+}
+.blog button,p{
+    margin-left: 10px;
 }
