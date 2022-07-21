@@ -4,25 +4,38 @@
 /* base styles */
 body{
     font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 /* top section styles */
-
+.top-section{
+    display: flex;
+    justify-content: center;
+}
 .top-banner{
     display: flex;
     color: #ffffff;
     background-color: #161616;
-    width: 92%;
+    border-radius: 30px;
+    width: 90%;
+    margin: 30px 0;
 }
 .top-banner div{
-    width: 50%;
+    width: 100%;
+}
+.texts{
+    margin:  2px 100px;
 }
 .texts h1{
     font-weight: 700;
     font-size: 70px;
+    line-height: 80px;
+    margin-bottom: 10px ;
 }
 .texts p{
-    font-weight: 400;
+    margin-bottom: 20px;
+    font-weight:400;
     font-size: 16px;
 }
 .top-banner-btn{
@@ -34,7 +47,10 @@ body{
     border-radius: 5px;
     border: none;
 }
+.top-image{
+    margin-left: -80px;
+}
 .top-banner .top-image img{
-    width: 581px;
-    height: 613px;
+    height: 100%;
+    width: 90%;
 }
