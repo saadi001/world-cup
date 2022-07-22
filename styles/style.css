@@ -12,6 +12,9 @@ body{
 section{
     margin-bottom: 100px;
 }
+.for-tab-view{
+    display: none;
+}
 
 /* top section styles */
 .top-section{
@@ -254,5 +257,19 @@ hr{
         display: grid;
         grid-template-columns: repeat(2, 2fr);
         
+    }
+    .hidden{
+        display: none;
+    }
+    .for-tab-view{
+        display: flex;
+        justify-content: center;
+    }
+    .last-part h2{
+        padding-top: 80px;
+    }
+    .footer-info{
+        display: flex;
+        flex-wrap: wrap;
     }
 }
