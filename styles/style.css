@@ -20,17 +20,18 @@ section{
 }
 .top-banner{
     display: flex;
-    color: #ffffff;
+    
     background-color: #161616;
     border-radius: 30px;
     width: 90%;
     margin: 30px 0;
 }
 .top-banner div{
-    width: 100%;
+    width: 50%;
 }
 .texts{
-    margin:  2px 100px;
+    color: #ffffff;
+    margin:  0 100px;
 }
 .texts h1{
     font-weight: 700;
@@ -147,4 +148,111 @@ hr{
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     margin: 20px 15px;
+}
+
+/* media queries 
+  For Mobile  */
+@media only screen and (max-width:576px) {
+    section{
+        margin-bottom: 0px;
+    }
+    .top-banner{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center ;
+        align-self: center;
+    }
+    .texts{
+        margin: 0;
+        text-align: center;
+    }
+    .top-banner div{
+        width: 100%;
+        
+    }
+    .texts h1{
+        font-size: 28px;
+        line-height: 44px;
+    }
+    .top-image{
+        margin-left: 12%;
+        margin-top: 5%;
+    }
+   .second-part{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-self: center;
+    justify-items: center;
+   } 
+   .sidebar{
+    background-color: white;
+    margin-bottom: 20px;
+   }
+   .for-border{
+    border: 1px solid rgb(211, 202, 202);
+   }
+   .blogs{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 0;
+    
+   }
+   footer{
+    height: 525px;
+   }
+   
+   .footer-info{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    justify-items: center;
+   }
+   .last-part h2{
+    padding-top: 30px;
+   }
+}
+
+/* media queries for tab view  */
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+    section{
+        margin-bottom: 0;
+    }
+    .texts{
+        margin: 0 50px;
+    }
+    .texts h1{
+        font-weight: 500;
+        font-size: 43px;
+        line-height: 53px;
+    }
+    .texts p{
+        font-weight: 200;
+        font-size: 13px;
+    }
+    .top-banner-btn{
+        margin-bottom: 25px;
+    }
+    .second-part{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+        
+    }
+    .sidebar{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        height: 67px;
+        background-color: white;
+    }
+    .for-border{
+        border: 1px solid rgb(211, 202, 202);
+    }
+    article{
+        margin-top: 25px;
+    }
+    .blogs{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        
+    }
 }
